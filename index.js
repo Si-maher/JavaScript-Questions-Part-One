@@ -30,3 +30,22 @@ function longestWord (sentence) {
     return longestWord
 }
 console.log(longestWord(textThree));
+
+// 3) Find the unique item(s) in an array
+
+let shoppingCart = ['apples', 'oranges','apples', 'pears', 'pears']
+
+
+function uniqueItems() {
+    let uniqueItem = []
+    shoppingCart.forEach((item)=> {
+        if(shoppingCart.indexOf(item) === shoppingCart.lastIndexOf(item)){
+            uniqueItem.push(item)
+        }
+    })
+    return uniqueItem
+
+    
+}
+console.log(uniqueItems(shoppingCart));
+
