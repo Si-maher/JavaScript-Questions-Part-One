@@ -88,3 +88,12 @@ let pilotsReduce = people.reduce(function(acc, item) {
 },0)
 console.log(pilotsReduce);
 
+// 6a) Create an incremental For loop that runs through the following array and prints the item
+
+let fruits = ['pears', 'oranges', 'apples', 'bananas']
+let newFruits = []
+for(i = 0; i < fruits.length; i++) {
+newFruits.push(fruits)[i] 
+}
+console.log(newFruits);
+
