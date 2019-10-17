@@ -73,3 +73,18 @@ let people = [
     return item.pilot 
 })
 console.log(pilots);
+
+// 5a) Now extract all the id data
+
+let pilotsMap = people.map(function(item) {
+    return item.id
+})
+console.log(pilotsMap);
+
+// B) Now add the total for the ids
+
+let pilotsReduce = people.reduce(function(acc, item) {
+    return acc + item.id
+},0)
+console.log(pilotsReduce);
+
