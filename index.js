@@ -49,3 +49,27 @@ function uniqueItems() {
 }
 console.log(uniqueItems(shoppingCart));
 
+// 4) Check to see if an array of objects contains devicePixelRatio. Return Boolean 
+
+let people = [
+    {
+        id:2,
+        name: 'Simon',
+        pilot: true
+    },
+    {
+        id:7,
+        name: 'Dave',
+        pilot: false
+    },
+    {
+        id:7,
+        name: 'Peter',
+        pilot: true
+    }
+]
+
+ let pilots = people.some(function(item){
+    return item.pilot 
+})
+console.log(pilots);
