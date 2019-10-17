@@ -97,3 +97,9 @@ newFruits.push(fruits)[i]
 }
 console.log(newFruits);
 
+// B) Now use a non incremental loop for the same array
+
+for (x of fruits){
+    console.log(x);
+    
+}
